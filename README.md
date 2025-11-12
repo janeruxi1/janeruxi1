@@ -1,5 +1,3 @@
-# Data-Scientist-Gen-AI-Focus-Porfolio
-
 # 👋 Hi, I'm Xi Ru — Data Scientist | GenAI Innovator
 
 I’m a data scientist with 6+ years of experience (5 in analytics, 1 in AI/ML), passionate about turning data and language models into intelligent business systems.
