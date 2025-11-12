@@ -16,4 +16,4 @@ I’m a data scientist with 6+ years of experience (5 in analytics, 1 in AI/ML),
 `Python` • `Pandas` • `LangChain` • `OpenAI API` • `Streamlit` • `Prophet` • `scikit-learn`
 
 ### 📫 Connect
-[LinkedIn](https://www.linkedin.com/in/yourname) | [Portfolio Website](https://yourname.github.io)
+[LinkedIn](https://www.linkedin.com/in/xiru) | [Portfolio Website](https://janeruxi1.github.io)
