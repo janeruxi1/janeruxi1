@@ -5,6 +5,7 @@
 I’m a **Data Scientist** with a strong focus on **AI-driven solutions** and a background in **Data Analysis**. I build end-to-end systems that combine data engineering, machine learning, and **Generative AI** to improve process automations, model predictions and business decisions.
 
 📍 Location: Bellevue, Washington
+
 This repository highlights selected projects that demonstrate my skills in AI-focused data science.
 
 ## 🔍 Focus
@@ -36,7 +37,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 * Combined traditional metrics with AI-generated insights for decision support
 * Emphasized **model evaluation, explainability, and stakeholder-ready outputs**
 
-➡️ Repo: [`automated-business-insights`]([https://janeruxi1/llm-insight-generator](https://github.com/janeruxi1/automated-business-insights))
+➡️ Repo: [`automated-business-insights`](https://github.com/janeruxi1/automated-business-insights)
 
 ---
 
