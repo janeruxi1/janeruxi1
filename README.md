@@ -2,7 +2,7 @@
 
 ## About Me
 
-I’m a **Data Scientist** with a strong focus on **AI-driven solutions** and a background in **Data Analysis**. I build end-to-end systems that combine data engineering, machine learning, and **Generative AI** to deliver measurable business impact.
+I’m a **Data Scientist** with a strong focus on **AI-driven solutions** and a background in **Data Analysis**. I build end-to-end systems that combine data engineering, machine learning, and **Generative AI** to improve process automations, model predictions and business decisions.
 
 * 🔍 Focus: Applied AI, LLM-powered analytics, ML systems
 * 🛠️ Stack: Python, SQL, Pandas, LangChain, Streamlit,  Prophet, PySpark, Databricks, MLflow, scikit-learn, FastAPI, LLM APIs
