@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Xi Ru — Data Scientist 
+# 👋 Hi, I'm Xi Ru 
 
 ## 👩‍💻 About Me
 
