@@ -8,6 +8,8 @@ I’m a **Data Scientist** with a strong focus on **AI-driven solutions** and a 
 
 This repository highlights selected projects that demonstrate my skills in AI-focused data science.
 
+---
+
 ## 🔍 Focus
 * Machine Learning & Deep Learning
 * Generative AI & LLM applications
@@ -39,7 +41,6 @@ Below are selected projects designed to mirror **real-world AI data science work
 
 ➡️ Repo: [`automated-business-insights`](https://github.com/janeruxi1/automated-business-insights)
 
----
 
 ### 2️⃣ Time Series Forecasting & Model Diagnostics (Core DS)
 
@@ -51,7 +52,6 @@ Below are selected projects designed to mirror **real-world AI data science work
 
 ➡️ Repo: `time-series-forecasting-project`
 
----
 
 ### 3️⃣ Scalable ML Pipelines with Spark & Databricks (AI at Scale)
 
