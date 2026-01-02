@@ -82,6 +82,5 @@ Below are selected projects designed to mirror **real-world AI data science work
 * [Portfolio Website](https://xiru.github.io)
 * [Email](ruthruxi@gmail.com)
 
----
 
 ⭐ If you find these projects useful, feel free to star the repos!
