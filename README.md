@@ -5,7 +5,7 @@
 I’m a **Data Scientist** with a strong focus on **AI-driven solutions** and a background in **Data Analysis**. I build end-to-end systems that combine data engineering, machine learning, and **Generative AI** to deliver measurable business impact.
 
 * 🔍 Focus: Applied AI, LLM-powered analytics, ML systems
-* 🛠️ Stack: Python, SQL, PySpark, Databricks, MLflow, scikit-learn, FastAPI, LLM APIs
+* 🛠️ Stack: Python, SQL, Pandas, LangChain, Streamlit,  Prophet, PySpark, Databricks, MLflow, scikit-learn, FastAPI, LLM APIs
 * 📍 Location: Bellevue, Washington
 
 > 🎯 **Portfolio goal:** Demonstrate production-minded **AI data science** — problem framing, model evaluation, diagnostics, and clear communication.
@@ -64,17 +64,11 @@ Below are selected projects designed to mirror **real-world AI data science work
 
 ## 📫 Contact
 
-* LinkedIn: [(https://www.linkedin.com/in/xiru)]
-* GitHub: [(https://github.com/janeruxi1)]
-* Portfolio Website [link]
-* Email: [ruthruxi@gmail.com]
+* [LinkedIn](https://www.linkedin.com/in/xiru)
+* [GitHub](https://github.com/janeruxi1)
+* [Portfolio Website](https://xiru.github.io)
+* [Email](ruthruxi@gmail.com)
 
 ---
 
 ⭐ If you find these projects useful, feel free to star the repos!
-
-### 🧰 Tech Stack
-`Python` • `Pandas` • `LangChain` • `OpenAI API` • `Streamlit` • `Prophet` • `scikit-learn`
-
-### 📫 Connect
-[LinkedIn] | [Portfolio Website](https://xiru.github.io)
