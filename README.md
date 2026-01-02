@@ -4,11 +4,23 @@
 
 I’m a **Data Scientist** with a strong focus on **AI-driven solutions** and a background in **Data Analysis**. I build end-to-end systems that combine data engineering, machine learning, and **Generative AI** to improve process automations, model predictions and business decisions.
 
-* 🔍 Focus: Applied AI, LLM-powered analytics, ML systems
-* 🛠️ Stack: Python, SQL, Pandas, LangChain, Streamlit,  Prophet, PySpark, Databricks, MLflow, scikit-learn, FastAPI, LLM APIs
-* 📍 Location: Bellevue, Washington
+📍 Location: Bellevue, Washington
+This repository highlights selected projects that demonstrate my skills in AI-focused data science.
 
-> 🎯 **Portfolio goal:** Demonstrate production-minded **AI data science** — problem framing, model evaluation, diagnostics, and clear communication.
+## 🔍 Focus
+* Machine Learning & Deep Learning
+* Generative AI & LLM applications
+* Data Engineering with Spark & Databricks
+* End-to-end AI systems (data → model → deployment)
+
+---
+
+## 🛠️ Skills & Tools
+* **Languages:** Python, SQL, R, DAX
+* **ML / AI:** Scikit-learn, TensorFlow, PyTorch, LLMs, Prophet
+* **Big Data:** Spark, Databricks, Delta Lake
+* **MLOps & Deployment:** FastAPI, Docker, GitHub Actions,MLflow
+* **Visualization:** Matplotlib, Seaborn, Streamlit
 
 ---
 
@@ -24,7 +36,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 * Combined traditional metrics with AI-generated insights for decision support
 * Emphasized **model evaluation, explainability, and stakeholder-ready outputs**
 
-➡️ Repo: `automated-business-insights`
+➡️ Repo: [`automated-business-insights`]([https://janeruxi1/llm-insight-generator](https://github.com/janeruxi1/automated-business-insights))
 
 ---
 
