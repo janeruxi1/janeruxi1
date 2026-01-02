@@ -39,7 +39,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 * Combined traditional metrics with AI-generated insights for decision support
 * Emphasized **model evaluation, explainability, and stakeholder-ready outputs**
 
-➡️ Repo: [`automated-business-insights`](https://github.com/janeruxi1/automated-business-insights)
+👉 Repo: [`automated-business-insights`](https://github.com/janeruxi1/automated-business-insights)
 
 
 ### 2️⃣ Time Series Forecasting & Model Diagnostics (Core DS)
@@ -50,7 +50,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 * Added **residual diagnostics, model fit summaries, and error analysis**
 * Tracked experiments and metrics using MLflow
 
-➡️ Repo: `time-series-forecasting-project`
+👉 Repo: [time-series-forecasting-project]
 
 
 ### 3️⃣ Scalable ML Pipelines with Spark & Databricks (AI at Scale)
@@ -61,7 +61,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 * Implemented window functions, incremental processing, and Delta time travel
 * Designed architecture with **production ML systems** in mind
 
-➡️ Repo: `spark-databricks-pipeline`
+👉 Repo: [spark-databricks-pipeline]
 
 ---
 
