@@ -31,7 +31,7 @@ This repository highlights selected projects that demonstrate my skills in AI-fo
 
 Below are selected projects designed to mirror **real-world AI data science work**, from data ingestion to model diagnostics and AI-powered insights.
 
-### 1️⃣ Automated Business Insights Platform (ML Evaluation + AI)
+### 🤖 1️. Automated Business Insights Platform (ML Evaluation + AI)
 
 **Tech:** Python, FastAPI, Pandas, LLMs
 
@@ -42,7 +42,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 👉 Repo: [`automated-business-insights`](https://github.com/janeruxi1/automated-business-insights)
 
 
-### 2️⃣ Time Series Forecasting & Model Diagnostics (Core DS)
+### 📈 2. Time Series Forecasting & Model Diagnostics (Core DS)
 
 **Tech:** Python, Statsmodels, MLflow
 
@@ -53,7 +53,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 👉 Repo: [time-series-forecasting-project]
 
 
-### 3️⃣ Scalable ML Pipelines with Spark & Databricks (AI at Scale)
+### ⚡ 3. Scalable ML Pipelines with Spark & Databricks (AI at Scale)
 
 **Tech:** PySpark, Delta Lake, Databricks
 
@@ -63,9 +63,17 @@ Below are selected projects designed to mirror **real-world AI data science work
 
 👉 Repo: [spark-databricks-pipeline]
 
+### 🧠 4. Generative AI: LLM-Powered Insight Generator
+
+**Tech:** Python, LangChain, OpenAI API, Streamlit
+
+* Uses LLMs to transform raw analytical outputs into human-readable insights, summaries, and reports.
+  
+👉 Repo: [llm-insight-generator]
+
 ---
 
-## 📈 Skills Demonstrated
+## 💡 Skills Demonstrated
 
 * Applied ML & **Generative AI** (LLMs, prompt design, evaluation)
 * Model training, **performance metrics**, and diagnostics
