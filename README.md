@@ -1,19 +1,80 @@
-# 👋 Hi, I'm Xi Ru — Data Scientist | GenAI Innovator
+# 👋 Hi, I'm Xi Ru — Data Scientist 
 
-I’m a data scientist with 6+ years of experience (5 in analytics, 1 in AI/ML), passionate about turning data and language models into intelligent business systems.
+## About Me
 
-### 🔍 Focus Areas
-- 🧠 AI Business Insights Automation
-- 🤖 LLM Agents & Workflow Automation
+I’m a **Data Scientist** with a strong focus on **AI-driven solutions** and a background in **Data Analysis**. I build end-to-end systems that combine data engineering, machine learning, and **Generative AI** to deliver measurable business impact.
 
-### 🧩 Featured Projects
-| Project | Description | Tech Stack |
-|----------|--------------|------------|
-| [AI Business Insights Dashboard](./genai-business-insights) | LLM-powered data insights & forecasting dashboard | Python, LangChain, Streamlit |
-| [LLM Workflow Agent](./llm-automation-agent) | Multi-tool AI agent that automates analytics workflows | LangChain, OpenAI API, Streamlit |
+* 🔍 Focus: Applied AI, LLM-powered analytics, ML systems
+* 🛠️ Stack: Python, SQL, PySpark, Databricks, MLflow, scikit-learn, FastAPI, LLM APIs
+* 📍 Location: Bellevue, Washington
+
+> 🎯 **Portfolio goal:** Demonstrate production-minded **AI data science** — problem framing, model evaluation, diagnostics, and clear communication.
+
+---
+
+## 📂 Projects
+
+Below are selected projects designed to mirror **real-world AI data science work**, from data ingestion to model diagnostics and AI-powered insights.
+
+### 1️⃣ Automated Business Insights Platform (ML Evaluation + AI)
+
+**Tech:** Python, FastAPI, Pandas, LLMs
+
+* Built an end-to-end ML analysis pipeline with automated performance summaries
+* Combined traditional metrics with AI-generated insights for decision support
+* Emphasized **model evaluation, explainability, and stakeholder-ready outputs**
+
+➡️ Repo: `automated-business-insights`
+
+---
+
+### 2️⃣ Time Series Forecasting & Model Diagnostics (Core DS)
+
+**Tech:** Python, Statsmodels, MLflow
+
+* Implemented multiple forecasting models and compared performance
+* Added **residual diagnostics, model fit summaries, and error analysis**
+* Tracked experiments and metrics using MLflow
+
+➡️ Repo: `time-series-forecasting-project`
+
+---
+
+### 3️⃣ Scalable ML Pipelines with Spark & Databricks (AI at Scale)
+
+**Tech:** PySpark, Delta Lake, Databricks
+
+* Built scalable data pipelines supporting ML workloads
+* Implemented window functions, incremental processing, and Delta time travel
+* Designed architecture with **production ML systems** in mind
+
+➡️ Repo: `spark-databricks-pipeline`
+
+---
+
+## 📈 Skills Demonstrated
+
+* Applied ML & **Generative AI** (LLMs, prompt design, evaluation)
+* Model training, **performance metrics**, and diagnostics
+* Big data processing with Spark & Delta Lake
+* AI-enabled APIs & backend systems
+* Clear documentation, reproducibility, and stakeholder communication
+
+---
+
+## 📫 Contact
+
+* LinkedIn: [(https://www.linkedin.com/in/xiru)]
+* GitHub: [(https://github.com/janeruxi1)]
+* Portfolio Website [link]
+* Email: [ruthruxi@gmail.com]
+
+---
+
+⭐ If you find these projects useful, feel free to star the repos!
 
 ### 🧰 Tech Stack
 `Python` • `Pandas` • `LangChain` • `OpenAI API` • `Streamlit` • `Prophet` • `scikit-learn`
 
 ### 📫 Connect
-[LinkedIn](https://www.linkedin.com/in/xiru) | [Portfolio Website](https://xiru.github.io)
+[LinkedIn] | [Portfolio Website](https://xiru.github.io)
