@@ -50,7 +50,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 * Added **residual diagnostics, model fit summaries, and error analysis**
 * Tracked experiments and metrics using MLflow
 
-👉 Repo: [time-series-forecasting-project]
+👉 Repo: [`time-series-forecasting-project`](https://github.com/janeruxi1/ml-time-series-forecasting-end-to-end)
 
 
 ### ⚡ 3. Scalable ML Pipelines with Spark & Databricks (AI at Scale)
