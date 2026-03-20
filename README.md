@@ -69,7 +69,7 @@ Below are selected projects designed to mirror **real-world AI data science work
 
 * Uses LLMs to transform raw analytical outputs into human-readable insights, summaries, and reports.
   
-👉 Repo: [[llm-insight-generator](https://github.com/janeruxi1/llm-insight-generator)]
+👉 Repo: [`llm-insight-generator`](https://github.com/janeruxi1/llm-insight-generator)
 
 ---
 
