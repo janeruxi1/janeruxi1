@@ -43,7 +43,7 @@ Projects are ordered to highlight the skills most relevant to **Product Data Sci
 * Delivered a reusable experimentation framework and **stakeholder decision memo**
 * **Dataset:** [E-commerce A/B Test (Kaggle)](https://www.kaggle.com/datasets/zhangluyuan/ab-testing)
 
-👉 Repo: [`ab-test-analysis`]([./01-ab-test-analysis](https://github.com/janeruxi1/ab-testing-project))
+👉 Repo: [`ab-test-analysis`]([https://github.com/janeruxi1/ab-testing-project])
 
 ### 📉 2. Customer Churn Prediction & Retention Analysis
 **Tech:** Python · Scikit-learn · XGBoost · SHAP · Streamlit · Docker
