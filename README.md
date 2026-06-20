@@ -59,13 +59,13 @@ Additional projects planned over the next several months, each chosen to round o
 
 ## 🛠️ Skills & Tools
 
-**Languages:** Python · SQL · R
-**Experimentation:** A/B testing · Power analysis · Bayesian inference · CUPED · Causal inference (DoWhy, EconML)
-**ML / DL:** Scikit-learn · XGBoost · LightGBM · PyTorch · Hugging Face
-**Data:** pandas · NumPy · PySpark · dbt
-**Big Data:** Spark · Databricks · Delta Lake
-**MLOps & Deployment:** MLflow · Docker · FastAPI · Streamlit · AWS (S3, SageMaker) · GitHub Actions
-**Visualization:** Matplotlib · Seaborn · Plotly · Tableau · Power BI
+- **Languages:** Python · SQL · R
+- **Experimentation:** A/B testing · Power analysis · Bayesian inference · CUPED · Causal inference (DoWhy, EconML)
+- **ML / DL:** Scikit-learn · XGBoost · LightGBM · PyTorch · Hugging Face
+- **Data:** pandas · NumPy · PySpark · dbt
+- **Big Data:** Spark · Databricks · Delta Lake
+- **MLOps & Deployment:** MLflow · Docker · FastAPI · Streamlit · AWS (S3, SageMaker) · GitHub Actions
+- **Visualization:** Matplotlib · Seaborn · Plotly · Tableau · Power BI
 
 ---
 
