@@ -1,160 +1,93 @@
 # 👋 Hi, I'm Xi Ru
 
-## 👩‍💻 About Me
+**Product Data Scientist** turning experiments and analytics into product decisions.
 
-I'm a **Data Scientist** passionate about using data to drive **product decisions, growth, and user experience**. I build **end-to-end analytics and ML solutions** — from experimentation and causal analysis to predictive modeling and deployment — with a focus on measurable business impact and stakeholder-ready insights.
-
-📍 Location: Bellevue, Washington
-
-This repository showcases selected projects built with **real-world datasets**, production-ready code, and reproducible workflows — designed to mirror the work of a data scientist across industries.
+📍 Redmond, Washington  ·  💼 Open to Product Data Scientist roles  ·  📫 [ruthruxi@gmail.com](mailto:ruthruxi@gmail.com)
 
 ---
 
-## 🔍 Focus
+## 💡 What I do
 
-* Experimentation & A/B Testing
-* Product Analytics, Metrics & Causal Inference
-* User Behavior, Retention & Growth Modeling
-* End-to-End ML Systems (data → model → deployment)
+I build the data layer that drives product decisions — from experimentation design and stakeholder-ready memos to predictive modeling and deployment. My focus: turn statistics into recommendations a PM, eng lead, or executive can act on without a stats degree.
+
+---
+
+## 🌟 Flagship Project
+
+### 🧪 A/B Test Analysis — StreamFlix Trial-to-Paid Experiment
+
+[![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?logo=streamlit)](https://janeruxi1-ab-testing-project.streamlit.app/)
+[![CI](https://github.com/janeruxi1/ab-testing-project/actions/workflows/ci.yml/badge.svg)](https://github.com/janeruxi1/ab-testing-project/actions)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/tests-55%20passing-brightgreen)](https://github.com/janeruxi1/ab-testing-project/tree/main/tests)
+
+An end-to-end experimentation project on a custom-designed synthetic streaming-service dataset (100k users, 14 columns, reproducible). Demonstrates the full product DS workflow from a PM brief to a ship recommendation:
+
+- **Experiment design** — pre-registered metric framework (primary / secondary / guardrails), MDE negotiation, power analysis
+- **Data quality** — SRM check, covariate balance, sensitivity analysis around an engineered assignment-bug
+- **Inference** — two-proportion z-test, Welch's t-test, Holm-Bonferroni correction, Beta-Binomial Bayesian posterior with ROPE
+- **Segmentation** — heterogeneous treatment effects across device, country, source, tenure; CUPED variance reduction; Simpson's-paradox check
+- **Stakeholder output** — decision memo with hero figure, plain-language verdicts, recommended rollout plan
+- **Engineering rigor** — modular `src/` library covered by 55 pytest unit tests + GitHub Actions CI across Python 3.10/3.11/3.12
+- **Interactive demo** — deployed Streamlit app for live sample-size design and A/B analysis
+
+🎮 **[Try the live demo →](https://janeruxi1-ab-testing-project.streamlit.app/)**
+👉 **[Browse the code →](https://github.com/janeruxi1/ab-testing-project)**
+
+---
+
+## 🚧 Currently Building
+
+### 📉 Customer Churn Prediction & Retention Analysis
+
+An end-to-end churn-prediction pipeline focused on **actionable retention levers**, not just predictive accuracy. Cohort analysis, SHAP-based driver identification, calibration, and a Streamlit demo for stakeholder exploration. Coming soon.
+
+---
+
+## 🗺️ Roadmap
+
+Additional projects planned over the next several months, each chosen to round out the Product Data Scientist skill set:
+
+| Project | Focus area | Status |
+|---|---|---|
+| Recommender System on MovieLens | Engagement & ranking systems | Planned |
+| NLP — Voice of Customer | Sentiment + topic modeling for PM teams | Planned |
+| Retail Demand Forecasting | Time series at scale | Planned |
+| Credit Risk Scoring with Fairness Audit | Calibration + fairness analysis | Planned |
 
 ---
 
 ## 🛠️ Skills & Tools
 
-* **Languages:** Python, SQL, R
-* **Experimentation:** A/B testing, causal inference, Bayesian methods, power analysis
-* **ML / DL:** Scikit-learn, XGBoost, LightGBM, PyTorch, TensorFlow, Hugging Face
-* **Data:** pandas, NumPy, PySpark, dbt
-* **Big Data:** Spark, Databricks, Delta Lake
-* **MLOps & Deployment:** MLflow, Docker, FastAPI, Streamlit, AWS (S3, SageMaker), GitHub Actions
-* **Visualization:** Matplotlib, Seaborn, Plotly, Tableau, Power BI
+**Languages:** Python · SQL · R
+**Experimentation:** A/B testing · Power analysis · Bayesian inference · CUPED · Causal inference (DoWhy, EconML)
+**ML / DL:** Scikit-learn · XGBoost · LightGBM · PyTorch · Hugging Face
+**Data:** pandas · NumPy · PySpark · dbt
+**Big Data:** Spark · Databricks · Delta Lake
+**MLOps & Deployment:** MLflow · Docker · FastAPI · Streamlit · AWS (S3, SageMaker) · GitHub Actions
+**Visualization:** Matplotlib · Seaborn · Plotly · Tableau · Power BI
 
 ---
 
-## 📂 Featured Projects
+## 🎯 What I Care About
 
-Projects are ordered to highlight the skills most relevant to **Product Data Scientist** roles: experimentation, user behavior modeling, and product-impacting ML.
-
-### 🧪 1. A/B Test Analysis — E-commerce Conversion
-**Tech:** Python · SciPy · PyMC · Plotly
-
-* Statistical analysis of a randomized experiment using **frequentist and Bayesian** approaches
-* Included **power analysis, sample-size calculation, and Simpson's paradox** demonstration
-* Delivered a reusable experimentation framework and **stakeholder decision memo**
-* **Dataset:** [E-commerce A/B Test (Kaggle)](https://www.kaggle.com/datasets/zhangluyuan/ab-testing)
-
-👉 Repo: [`ab-test-analysis`](https://github.com/janeruxi1/ab-testing-project)
-
-### 📉 2. Customer Churn Prediction & Retention Analysis
-**Tech:** Python · Scikit-learn · XGBoost · SHAP · Streamlit · Docker
-
-* End-to-end churn prediction pipeline with cohort analysis and **driver identification**
-* Used **SHAP explainability** to surface actionable retention levers for product teams
-* Achieved **ROC-AUC 0.86**, deployed as a Streamlit demo for stakeholder exploration
-* **Dataset:** [Telco Customer Churn (IBM / Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-
-👉 Repo: [`customer-churn-prediction`](./02-customer-churn-prediction)
-
-### 🎬 3. Recommender System — MovieLens
-**Tech:** PySpark · implicit · PyTorch · MLflow
-
-* Built collaborative filtering (ALS), content-based, and **hybrid neural recommender (Two-Tower)** models to drive engagement
-* Offline evaluation with **NDCG, Recall@K, and uplift simulation** for product impact
-* Cold-start handling, scalable PySpark pipeline
-* **Dataset:** [MovieLens 25M](https://grouplens.org/datasets/movielens/)
-
-👉 Repo: [`recommender-system`](./03-recommender-system)
-
-### 🧠 4. NLP — Voice of Customer (Review Analysis)
-**Tech:** Hugging Face Transformers · PyTorch · BERTopic · FastAPI
-
-* Fine-tuned **DistilBERT** on Amazon reviews for sentiment classification
-* Applied **BERTopic** for unsupervised topic discovery to surface product pain points
-* Achieved **F1 0.91**, served via FastAPI with a topic-trend dashboard for PM teams
-* **Dataset:** [Amazon Product Reviews](https://nijianmo.github.io/amazon/index.html)
-
-👉 Repo: [`nlp-review-analysis`](./04-nlp-review-analysis)
-
-### 📈 5. Retail Demand Forecasting
-**Tech:** Python · Prophet · Statsmodels · LightGBM · Power BI
-
-* Hierarchical time-series forecasting for retail SKUs using Prophet, ARIMA, and LightGBM with lag features
-* Built a **backtesting framework** and Power BI dashboard
-* Benchmarked with WRMSSE, automated retraining pipeline
-* **Dataset:** [M5 Forecasting (Walmart)](https://www.kaggle.com/competitions/m5-forecasting-accuracy)
-
-👉 Repo: [`retail-demand-forecasting`](./05-retail-demand-forecasting)
-
-### 💳 6. Credit Risk Scoring & Default Prediction
-**Tech:** Python · LightGBM · imbalanced-learn · Fairlearn · MLflow
-
-* Built a credit scoring model on Lending Club data with imbalanced-class handling (SMOTE) and calibration
-* Conducted **fairness analysis** across demographic groups
-* Achieved **KS statistic 0.42**, tracked experiments with MLflow
-* **Dataset:** [Lending Club Loan Data](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
-
-👉 Repo: [`credit-risk-scoring`](./06-credit-risk-scoring)
-
----
-
-## 🗂️ Repository Structure
-
-Each project follows a consistent, production-style layout:
-
-```
-project-name/
-├── README.md              # Problem, approach, results
-├── data/                  # Raw & processed data (or download script)
-├── notebooks/             # EDA and prototyping
-├── src/                   # Production code (modular, tested)
-│   ├── data/
-│   ├── features/
-│   ├── models/
-│   └── evaluation/
-├── tests/                 # Unit tests (pytest)
-├── app/                   # Streamlit / FastAPI demo
-├── requirements.txt
-├── Dockerfile
-└── .github/workflows/     # CI pipeline
-```
-
----
-
-## 💡 Skills Demonstrated
-
-* **Experimentation:** A/B test design, power analysis, frequentist & Bayesian inference, causal reasoning
-* **Product analytics:** retention, engagement, funnel & cohort analysis, North Star metric definition
-* **Problem framing:** translating product questions into measurable, decision-ready analyses
-* **Modeling:** classical ML, deep learning, time series, recommender systems, NLP
-* **Evaluation:** beyond accuracy — calibration, fairness, business KPIs, uplift
-* **Communication:** dashboards, decision memos, stakeholder-friendly visualizations
-* **Engineering:** modular code, tests, CI/CD, containerization, deployment
-
----
-
-## 🚀 How to Run a Project
-
-```bash
-git clone https://github.com/janeruxi1/data-science-portfolio.git
-cd data-science-portfolio/01-ab-test-analysis
-pip install -r requirements.txt
-python src/analyze.py
-streamlit run app/app.py
-```
+- **Decision-ready analysis** — every CI, every effect size, every recommendation translated into language a PM or exec can act on
+- **Engineering rigor in DS code** — unit tests, CI, reproducibility — not just notebooks
+- **Communication** — a decision memo and one hero figure beat a 40-slide deck
+- **Honest uncertainty** — confidence intervals, Bayesian credible intervals, sensitivity analyses — never just a point estimate
 
 ---
 
 ## 🌱 Currently Learning
 
-Generative AI & LLM applications · LLM evaluation & prompt design · Causal inference (DoWhy, EconML) · Quasi-experiments · Real-time ML systems
+Generative AI & LLM applications · LLM evaluation & prompt design · Quasi-experiments & causal inference at scale · Real-time ML systems
 
 ---
 
-## 📫 Contact
+## 📫 Get in touch
 
-* [LinkedIn](https://www.linkedin.com/in/xiru)
-* [GitHub](https://github.com/janeruxi1)
-* [Portfolio Website](https://xiru.github.io)
-* [Email](mailto:ruthruxi@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/xiru)
+- 📧 [Email](mailto:ruthruxi@gmail.com)
+- 🐙 [GitHub](https://github.com/janeruxi1)
 
-⭐ If you find these projects useful, feel free to star the repos or reach out — I'm always open to feedback, collaboration, and **Data Scientist interview conversations**.
+⭐ If any of this resonates — for a role, a collaboration, or just a chat about experimentation — I'd love to hear from you.
