@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Xi Ru
 **Product Data Scientist** turning experiments and analytics into product decisions.
-· 📍 Redmond, Washington  ·  💼 Open to Product Data Scientist roles  ·  📫 [ruthruxi@gmail.com](mailto:ruthruxi@gmail.com)
+*  📍 Redmond, Washington  *  💼 Open to Product Data Scientist roles  *  📫 [ruthruxi@gmail.com](mailto:ruthruxi@gmail.com)
 
 ---
 
