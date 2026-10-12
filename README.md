@@ -11,15 +11,34 @@ I work on the question behind the analysis: what should we do, and how sure are 
 
 ## 🌟 Flagship Projects
 
-The first two cover the twin questions every subscription business asks: **who to acquire, and how to keep them.** The third asks a newer one: **is an AI support assistant safe to put in front of customers, and how would we know?** All three share the same fictional streaming service, StreamFlix, and are built on synthetic data — chosen because designing the data lets me embed known ground truth for validation.
+**Hotel Search Ranking** runs on real data: 9.9 million hotel impressions from Expedia's search logs, used to decide which ranking deserves an A/B test. The three StreamFlix projects cover the twin questions every subscription business asks, **who to acquire and how to keep them**, and a newer one: **is an AI support assistant safe to put in front of customers, and how would we know?** They share a fictional streaming service built on synthetic data, chosen because designing the data lets me embed known ground truth for validation.
 
 | If the role is about… | Start with |
 |---|---|
-| Experimentation and causal inference | A/B test analysis; the uplift models in the churn project |
+| Decision science on real, messy data | Hotel Search Ranking: pre-declared decision rule, offline policy evaluation, test sizing |
+| Experimentation and causal inference | Hotel Search Ranking (randomized traffic in observational logs); A/B test analysis; the uplift models in the churn project |
 | Decisions under cost and budget constraints | Churn: expected-value targeting under a budget cap. RAG: break-even model and pilot sizing |
-| Predictive modeling and ML | Churn: calibrated model, four-family bake-off, MLflow tracking |
+| Predictive modeling and ML | Churn: calibrated model, four-family bake-off, MLflow tracking. Hotel ranking: conditional logit choice model |
 | LLM and AI evaluation | RAG evaluation harness |
 | Product analytics and metrics | A/B test: metric framework, guardrails, segmentation |
+
+### 🏨 Hotel Search Ranking — Expedia Search Logs (real data)
+[![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?logo=streamlit)](https://janeruxi1-hotel-search-ranking.streamlit.app/)
+[![CI](https://github.com/janeruxi1/Hotel-Search-Ranking/actions/workflows/ci.yml/badge.svg)](https://github.com/janeruxi1/Hotel-Search-Ranking/actions)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/tests-64%20passing-brightgreen)](https://github.com/janeruxi1/Hotel-Search-Ranking/tree/main/tests)
+
+A ranking team wants to push cheaper hotels up the search results. Before they spend an A/B test slot on it: how much does position matter, what drives the choice, and which ranking should be tested? Built on Expedia's ICDM 2013 release (9.9M impressions, 399k searches), 30% of which were shown in random order.
+- **Causal effect from logs** — the randomly ordered searches show the naive reading of ranked traffic overstates position effects **3.4×** (95% CI 3.2–3.7); a balanced panel removes a composition bias that inflated the first estimate, and the click slope matches a published study on the same data
+- **Discrete choice model** — a conditional logit written from scratch (Newton's method, analytic Hessian), with a within-hotel price effect that is more than twice the naive one; moving from position 10 to 1 is worth a **$56** price cut for clicks
+- **Pre-declared decision rule** — committed to git before the evaluation ran; four rankings scored offline on held-out searches with bootstrap and coefficient-draw intervals. Cheapest first loses on both bookings and booking value (−24%)
+- **Honest about the limits** — cross-fitting shows the evaluator does not flatter its own rankings, but a direct check of the mechanism behind the offline gains is inconclusive, so the memo recommends a test rather than a launch; a bias found in that check during review was fixed and documented
+- **Experiment design** — a three-arm test sized with power analysis, verified by simulation, where the 2% booking-value guardrail, not the booking lift, sets the size (616k searches per arm), turning a statistical detail into a business decision
+- **Stakeholder output** — decision memo, executed notebook per phase ending in a written verdict, and a live demo with a test-sizing calculator
+- **Engineering rigor** — 64 pytest tests + GitHub Actions CI on a synthetic stand-in (the data may not be redistributed); memo and README numbers verified against the measured records on every push
+
+🎮 **[Try the live demo →](https://janeruxi1-hotel-search-ranking.streamlit.app/)**
+👉 **[Browse the code →](https://github.com/janeruxi1/Hotel-Search-Ranking)**
 
 ### 🧪 A/B Test Analysis — StreamFlix Trial-to-Paid Experiment
 [![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?logo=streamlit)](https://janeruxi1-ab-testing-project.streamlit.app/)
@@ -97,7 +116,8 @@ An evaluation harness for a retrieval-augmented support assistant over a 45-arti
 ## 🛠️ Skills & Tools
 - **Languages:** Python · SQL · R
 - **Experimentation & causal inference:** A/B testing · Power analysis · Bayesian inference · CUPED · Uplift modeling
-- **Decision science:** Expected-value modeling · Budget-constrained allocation · Sensitivity analysis · Break-even analysis
+- **Decision science:** Expected-value modeling · Budget-constrained allocation · Pre-declared decision rules · Offline policy evaluation · Sensitivity analysis · Break-even analysis
+- **Econometrics:** Discrete choice (conditional logit) · Fixed effects · Delta method · Bootstrap inference
 - **ML:** Scikit-learn · XGBoost · SHAP · calibration methods · survival analysis
 - **LLM & retrieval:** RAG evaluation · LLM-as-judge validation · BM25 · sentence-transformers · OpenAI API
 - **Data:** pandas · NumPy · dbt · PySpark
