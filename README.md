@@ -7,7 +7,7 @@
 
 ## ⏱️ The portfolio in one minute
 
-Seven end-to-end projects. Each one starts from a business question, ends with a decision memo, has a live demo, and is checked by CI: tests, a rerun of the analysis, and a check that the numbers in the README and memo match the recorded results.
+Eight end-to-end projects. Each one starts from a business question, ends with a decision memo, has a live demo, and is checked by CI: tests, a rerun of the analysis, and a check that the numbers in the README and memo match the recorded results.
 
 | Project | The decision | Core methods | Data | Links |
 |---|---|---|---|---|
@@ -17,6 +17,7 @@ Seven end-to-end projects. Each one starts from a business question, ends with a
 | 🏨 [Hotel search ranking](https://github.com/janeruxi1/Hotel-Search-Ranking) | Which ranking change deserves an A/B test slot? | Causal effect from randomized logs, conditional logit, offline policy evaluation, power analysis | **Real**: 9.9M Expedia impressions | [Demo](https://janeruxi1-hotel-search-ranking.streamlit.app/) · [Memo](https://github.com/janeruxi1/Hotel-Search-Ranking/blob/main/reports/decision_memo.md) |
 | 🧪 [A/B test analysis](https://github.com/janeruxi1/StreamFlix-AB-Testing) | Ship the new homepage? | Power analysis, SRM, CUPED, Bayesian A/B, segment effects | Synthetic, with known truth | [Demo](https://janeruxi1-ab-testing-project.streamlit.app/) · [Memo](https://github.com/janeruxi1/StreamFlix-AB-Testing/blob/main/reports/decision_memo.md) |
 | 💸 [Churn retention targeting](https://github.com/janeruxi1/StreamFlix-Churn-Retention) | Who gets which retention offer under a budget? | Survival analysis, calibrated churn model, SHAP, uplift models, budget allocation | Synthetic, with known truth | [Demo](https://janeruxi1-streamflix-churn-retention.streamlit.app/) · [Memo](https://github.com/janeruxi1/StreamFlix-Churn-Retention/blob/main/reports/decision_memo.md) |
+| 🧮 [Product analytics in SQL](https://github.com/janeruxi1/ecommerce-sql-product-analytics) | Where does checkout leak, why did revenue fall, did the test win? | BigQuery SQL: funnels, sessionization, cohorts, north-star metric, shift-share, A/B readout and A/A in SQL | GA4 sample (real, obfuscated; 4.3M events) + theLook (synthetic) | [Cases](https://github.com/janeruxi1/ecommerce-sql-product-analytics#the-cases) |
 | 🔎 [RAG evaluation](https://github.com/janeruxi1/StreamFlix-RAG-evaluation) | Is the LLM support assistant ready for a pilot? | Golden-set design, retrieval bake-off, validated LLM-as-judge, bootstrap inference | Synthetic help centre | [Demo](https://janeruxi1-streamflix-rag-evaluation.streamlit.app/) · [Memo](https://github.com/janeruxi1/StreamFlix-RAG-evaluation/blob/main/reports/decision_memo.md) |
 
 **Short on time?** Read the [congestion toll memo](https://github.com/janeruxi1/nyc-congestion-toll-causal-impact/blob/main/reports/decision_memo.md) (causal inference on real data), the [driver pay README](https://github.com/janeruxi1/ridehail-driver-pay-optimization) (modeling through to optimization and a deployed service), and the [fraud decision table](https://github.com/janeruxi1/card-fraud-decisioning#the-decision) (turning a model score into dollars).
@@ -165,6 +166,17 @@ Turns a calibrated churn model into a per-subscriber offer policy under a monthl
 
 🎮 **[Live demo](https://janeruxi1-streamflix-churn-retention.streamlit.app/)** · 👉 **[Code](https://github.com/janeruxi1/StreamFlix-Churn-Retention)**
 
+### 🧮 Product Analytics in SQL: Six E-commerce Cases on BigQuery
+[![CI](https://github.com/janeruxi1/ecommerce-sql-product-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/janeruxi1/ecommerce-sql-product-analytics/actions)
+
+Six questions a product team asks every quarter, each answered in BigQuery SQL on public data (Google's GA4 Merchandise Store sample and theLook eCommerce), and each query tested on hand-built tables in CI.
+
+- **Revenue drop, diagnosed:** January revenue fell 64.3%; a quarter of January purchases arrived without revenue, so most of the apparent basket-size drop is tracking, and an exact shift-share split shows the rest is site-wide, not one segment.
+- **A readout that refuses to be fooled:** an A/B readout written entirely in SQL (sample-ratio check, CUPED, erfc p-values) returns a "significant" +3.6-point win; the planted truth (+0.26), the minimum detectable effect (4.4) and a 200-split A/A check all show it is noise.
+- **Core SQL, done carefully:** ordered funnels with inequality joins, sessionization with `LAG` and a `RANGE` frame (ties stay together), cohort grids, a north-star metric tree with trailing-window guardrails, `UNNEST` of GA4's nested events.
+
+👉 **[Code and cases](https://github.com/janeruxi1/ecommerce-sql-product-analytics)**
+
 ### 🔎 RAG Evaluation: StreamFlix Support Assistant
 [![CI](https://github.com/janeruxi1/StreamFlix-RAG-evaluation/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/janeruxi1/StreamFlix-RAG-evaluation/actions/workflows/ci.yml)
 [![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?logo=streamlit)](https://janeruxi1-streamflix-rag-evaluation.streamlit.app/)
@@ -183,12 +195,13 @@ An evaluation harness and deployment memo for an LLM support assistant over a sy
 
 ## 🛠️ Skills and where they're used
 - **Causal inference:** difference-in-differences and event studies, synthetic control, forecast counterfactuals, double ML, uplift models, placebo and falsification tests *(congestion toll, driver pay, hotel ranking, churn)*
-- **Experimentation:** power analysis, SRM, CUPED, Bayesian A/B, switchback tests, multi-arm test sizing *(A/B test, hotel ranking, driver pay)*
+- **Experimentation:** power analysis, SRM, CUPED, Bayesian A/B, switchback tests, multi-arm test sizing, A/A checks *(A/B test, hotel ranking, driver pay, SQL casebook)*
+- **SQL and product analytics:** funnels, sessionization, cohort retention, north-star metrics and guardrails, revenue-drop diagnosis, window functions, nested/array data *(SQL casebook on BigQuery; DuckDB in every real-data project)*
 - **ML and forecasting:** LightGBM/XGBoost, calibration, SHAP, survival analysis, rolling-origin backtests, anomaly detection *(fraud, churn, driver pay, congestion toll)*
 - **Decision science and optimization:** expected-cost policies, budget allocation, mixed-integer programming, discrete-event simulation, offline policy evaluation *(fraud, churn, driver pay, hotel ranking)*
 - **Statistics:** fixed effects, clustered SEs, conditional logit, Bayesian hierarchical models (PyMC), bootstrap, delta method
 - **LLM evaluation:** golden sets, retrieval benchmarks, LLM-as-judge validation *(RAG)*
-- **Data and engineering:** Python, SQL, R · pandas, DuckDB, PySpark · AWS (S3, Athena, CloudFormation, IAM) · Streamlit, FastAPI, Docker, MLflow · pytest, GitHub Actions CI/CD
+- **Data and engineering:** Python, SQL, R · pandas, DuckDB, PySpark · AWS (S3, Athena, CloudFormation, IAM) · Google BigQuery · Streamlit, FastAPI, Docker, MLflow · pytest, GitHub Actions CI/CD
 - **From my day-to-day work** (not in these repositories): Databricks, SQL Server, Oracle, Power BI, Tableau, Flask
 
 ---
