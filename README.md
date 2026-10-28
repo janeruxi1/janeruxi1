@@ -33,7 +33,7 @@ Seven end-to-end projects. Each one starts from a business question, ends with a
 | **Push back on the easy answer** | Congestion toll: the quick comparison shows −2.6%, but the same comparison in a year with no toll shows −4.4%. The memo says "no detectable effect", not "the toll cut trips". |
 | **Turn a model into a decision with a dollar value** | Fraud: the decision layer alone saves $1,070 per 1,000 payments with the same model. Churn: budget-capped offers per subscriber. Driver pay: a constrained optimizer with guardrails. |
 | **State uncertainty honestly** | Confidence intervals, placebo distributions and backtest error bands on every headline. Results that don't hold up are reported as not measurable. |
-| **Build at production scale and quality** | DuckDB and PySpark pipelines over billions of rows; a FastAPI service in Docker with CD; CI that reruns every notebook and fails if the results drift. |
+| **Build at production scale and quality** | DuckDB, PySpark and AWS Athena pipelines over billions of rows (the congestion toll pipeline runs on S3 + Athena and is reconciled with the local build); a FastAPI service in Docker with CD; CI that reruns every notebook and fails if the results drift. |
 | **Communicate to non-technical owners** | A one-page decision memo per project, a live demo a PM can use, and figures labeled in plain language. |
 | **Own mistakes in the open** | The RAG project documents a miscounted refusal check and its fix. Hotel ranking documents a bias found in review. Driver pay corrected cleaning rules after the first real month. |
 
@@ -63,6 +63,7 @@ In January 2025 New York started tolling vehicles entering Manhattan below 60th 
 - **Recommendation:** treat the fee as a pass-through. Don't fund promotions to offset it. Test a partial fee refund on shared rides, the one segment that reacted.
 - **Engineering:**
   - a DuckDB pipeline turns 168 monthly files into committed daily aggregates;
+  - the same pipeline also runs on **AWS (S3 + Athena, infrastructure as CloudFormation)**: 9 queries scan 52 GB for $0.24, and the output matches the laptop build in 504 of 504 checks; the check caught a one-second difference in how the two SQL engines count time, now fixed and tested;
   - CI reruns all six notebooks and fails if any result drifts;
   - a test checks every number quoted in the README and memo.
 - Follow-up to the congestion-fee chapter of the driver pay project, which flagged a pre-toll drift it could not resolve.
@@ -187,7 +188,7 @@ An evaluation harness and deployment memo for an LLM support assistant over a sy
 - **Decision science and optimization:** expected-cost policies, budget allocation, mixed-integer programming, discrete-event simulation, offline policy evaluation *(fraud, churn, driver pay, hotel ranking)*
 - **Statistics:** fixed effects, clustered SEs, conditional logit, Bayesian hierarchical models (PyMC), bootstrap, delta method
 - **LLM evaluation:** golden sets, retrieval benchmarks, LLM-as-judge validation *(RAG)*
-- **Data and engineering:** Python, SQL, R · pandas, DuckDB, PySpark · Streamlit, FastAPI, Docker, MLflow · pytest, GitHub Actions CI/CD
+- **Data and engineering:** Python, SQL, R · pandas, DuckDB, PySpark · AWS (S3, Athena, CloudFormation, IAM) · Streamlit, FastAPI, Docker, MLflow · pytest, GitHub Actions CI/CD
 - **From my day-to-day work** (not in these repositories): Databricks, SQL Server, Oracle, Power BI, Tableau, Flask
 
 ---
