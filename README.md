@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Xi Ru
+# 👋 Hi, I'm Xi
 **Data Scientist.** I turn experiments, causal analysis, models and forecasts into decisions a business can act on, and I say how sure we are.
 
 📍 Redmond, Washington · 💼 Open to Senior Data Scientist and Data Scientist roles: product, decision science, applied ML, marketplace and pricing · 📫 [ruthruxi@gmail.com](mailto:ruthruxi@gmail.com) · [LinkedIn](https://www.linkedin.com/in/xiru)
