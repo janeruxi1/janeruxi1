@@ -79,7 +79,7 @@ Eight end-to-end projects. Each one starts from a business question and ends wit
 ### 💸 Churn and Retention Offers: KKBox Subscriptions and a Real Retention Experiment (real data)
 [![CI](https://github.com/janeruxi1/churn-uplift-decisioning/actions/workflows/ci.yml/badge.svg)](https://github.com/janeruxi1/churn-uplift-decisioning/actions) [![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?logo=streamlit)](https://janeruxi1-churn-uplift-decisioning.streamlit.app/)
 
-- **Churn model tested out of time:** trained on February 2017, scored once on March; LightGBM reaches **PR-AUC 0.594** against a 9.0% churn rate and its top 10% of scores hold **60%** of churners, after proving no future data leaks into the features.
+- **Churn model tested out of time:** trained on February 2017, scored once on March; LightGBM reaches **PR-AUC 0.594** against a 9.0% churn rate and its top 10% of scores hold **60%** of churners, after proving no future data leaks into the features; every model run is tracked in MLflow and the shipped model registered.
 - **A "randomized" experiment that wasn't:** in a real telecom retention campaign, a model predicts who was called (AUC 0.64); propensity-weighted, doubly robust estimates show **no detectable effect** (−0.49 points, 95% CI −1.49 to +0.51), and no uplift model beats random calling.
 - **Decision:** don't roll out an offer on borrowed evidence; it would pay for ~11,000 of 971,000 members at the best estimate, so test it first, on 256 high-risk members per arm.
 
